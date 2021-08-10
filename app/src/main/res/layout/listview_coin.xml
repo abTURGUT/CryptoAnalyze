@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/lvDeleteBTN"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvBuyPriceTXT"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:text="Alış Fiyatı :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvCoinNameTXT" />
+
+    <TextView
+        android:id="@+id/lvCurrentPriceTXT"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:text="Anlık Fiyat :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvBuyPriceTXT" />
+
+    <TextView
+        android:id="@+id/lvCoinCountTXT"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Adedi :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvCurrentPriceTXT" />
+
+    <TextView
+        android:id="@+id/lvNplPriceTXT"
+        android:layout_width="67dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="$"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lvCurrentPriceTXT" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="67dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="36dp"
+        android:text="NPL Fiyatı"
+        app:layout_constraintBottom_toTopOf="@+id/lvNplPriceTXT"
+        app:layout_constraintStart_toEndOf="@+id/lvCurrentPriceTXT" />
+
+    <TextView
+        android:id="@+id/lvNplTXT"
+        android:layout_width="67dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="36dp"
+        android:text="%"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/lvCoinNameTXT"
+        app:layout_constraintTop_toBottomOf="@+id/label1" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="67dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="NPL Oranı"
+        app:layout_constraintStart_toEndOf="@+id/lvCoinNameTXT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvCoinNameTXT"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Coin Adı :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
